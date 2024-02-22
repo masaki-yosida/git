@@ -36,4 +36,18 @@ total_price = apple_price * count
 print('購入するりんごの個数は' + str(count) + '個です')
 print('支払い金額は' + str(total_price) + '円です')
 
+fruits = ['apple', 'banana', 'orange']
+# リストの末尾に文字列「 grape 」を追加してください
+fruits.append("grape")
+# 変数 fruits に代入したリストを出力してください
+print(fruits)
+# インデックス番号が 0 の要素を文字列「 cherry 」に更新してください
+fruits[0] = "cherry"
+# インデックス番号が 0 の要素を出力してください
+print(fruits[0] )
+
+fruits = ['apple', 'banana', 'orange']
+# for 文を用いてリストの要素を1つずつ取り出し、「 好きな果物は◯◯です 」と出力してください
+for fruit in fruits :
+   print("好きな果物は"+fruit+"です")
 
