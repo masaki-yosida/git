@@ -20,3 +20,8 @@ SELECT
 
 FROM
 「FROM」を用いて、SELECTで選んだカラムが「どのテーブルのカラムか」を指定する必要があります。
+
+使い方
+-- purchasesテーブルから、priceカラムのデータを取得してください
+select price
+from purchases;
