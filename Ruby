@@ -28,3 +28,9 @@ languages.each do |language|
   puts "#{language}を話せます"
 end
 
+Hash(ハッシュ)
+配列は一つの要素にオブジェクトが一つ入っていたのに対して、ハッシュはオブジェクトがキーとバリューの二つ入っているのが特長です
+例
+fruits = {"apple": "100円", "orange": "80円", "melon": "500"}
+puts fruits
+
