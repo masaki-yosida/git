@@ -33,3 +33,12 @@ from purchases;
 
 categoryカラムが「食費」であるデータを取得し方
 where category = "食費" ; 
+
+データ型
+テキストデータや数値データ、さらには日付データといったように「データの種類」を示すもの
+
+priceカラムが「1000」のデータを取得
+where price =1000;
+
+purchased_atカラムが「2017-07-01」のデータを取得
+where purchased_at = "2017-07-01" ;
