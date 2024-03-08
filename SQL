@@ -30,3 +30,6 @@ from purchases;
 select *
 from purchases;
 *で全てを習得できる
+
+categoryカラムが「食費」であるデータを取得し方
+where category = "食費" ; 
