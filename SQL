@@ -64,3 +64,9 @@ where name like "プリン%" ;
 nameカラムが「プリン」で終わるデータを取得
 where name like "%プリン" ;
 
+NOT演算子
+「〇〇を含まないデータ」や「〇〇に一致しないデータ」のような条件でデータを取得したい場合は「否定」を意味する「NOT演算子」を用います
+character_nameカラムが「にんじゃわんこ」でないデータを取得
+where not character_name = "にんじゃわんこ";
+nameカラムが「プリン」を含まないデータを取得
+where not name like "%プリン%";
