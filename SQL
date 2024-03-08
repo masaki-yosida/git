@@ -25,3 +25,8 @@ FROM
 -- purchasesテーブルから、priceカラムのデータを取得してください
 select price
 from purchases;
+
+-- purchasesテーブルから、全てのカラムのデータを取得してください
+select *
+from purchases;
+*で全てを習得できる
