@@ -244,3 +244,18 @@ WHERE rank < (
   FROM countries
   WHERE name = "日本"
 );
+
+JOIN
+JOINは複数のテーブルを1つに結合したいときに使います。ONで条件を指定して、テーブルAにテーブルBを結合します。結合したテーブルは1つのテーブルとしてデータを取得
+SELECT *
+FROM テーブルA
+join　テーブルB
+on　結合条件（「ON テーブル名.カラム名 = テーブル名.カラム名）
+結合条件
+結合条件は、「ON テーブル名.カラム名 = テーブル名.カラム名」で指定します
+
+JOINを使い、playersテーブルにcountriesテーブル を結合してデータを取得してください。ONを使い、playersテーブルのcountry_idとcountriesテーブルのidを紐づけ
+SELECT *
+FROM players
+JOIN countries
+ON players.country_id = countries.id ;
