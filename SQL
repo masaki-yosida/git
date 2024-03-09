@@ -275,3 +275,5 @@ FROM players
 join  countries
 on players.country_id = countries.id
 group by countries.name;
+
+JOINを使った結合は、FROMで指定したテーブルを基準に実行されます。ただし外部キーがNULLのレコードは、実行結果に表示されません。
