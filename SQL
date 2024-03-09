@@ -222,6 +222,6 @@ WHERE goals > (
 SELECT name,goals
 FROM players
 where goals>(
-avg(goals)
+select avg(goals)
 from players
 );
