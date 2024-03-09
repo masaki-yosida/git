@@ -114,3 +114,12 @@ SELECT DISTINCT(character_name)
 四則演算
 消費税を含んだpriceカラムのデータを取得
 SELECT name, price, price *1.08
+
+SUM関数
+SQLで数値の合計を計算する場合は、SUMを用います
+priceカラムのデータの合計を取得
+SELECT sum(price)
+「にんじゃわんこ」であるpriceカラムのデータの合計を取得
+SELECT sum(price)
+FROM purchases
+WHERE character_name ="にんじゃわんこ";
