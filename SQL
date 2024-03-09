@@ -288,4 +288,15 @@ on players.previous_team_id = teams.id;
 
 JOINは1つのクエリで、複数回使用できます。JOINを複数回使用しても、FROMは1度だけ書けば大丈夫
 
+INSERT
+テーブルにレコードを挿入したいときはINSERTを使います。
+AUTO INCREMENT
+idカラムにはAUTO INCREMENTという機能が使われます。
+AUTO INCREMENTとは「自動で増加する」といった意味で、データが作成されるときに自動で値が割り当てられます
 
+studentsテーブルに新しく以下のデータを追加してください。
+name :Kate
+course: Java
+*idカラムにはAUTO INCREMENTが使われているので、idカラムは省略してください。
+INSERT into students (name,course)
+values ("Kate","Java");
