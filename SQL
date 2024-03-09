@@ -207,3 +207,21 @@ SELECT sum(price),purchased_at,character_name
 FROM purchases
 GROUP BY purchased_at,character_name
 having sum(price) > 3000;
+
+サブクエリ
+SQLでは、クエリの中に他のクエリを入れることができます。この他のクエリをサブクエリと言います。2つ以上のクエリを1つにまとめることができる
+ウィルの得点数より高いレコードのデータを取得
+SELECT name
+FROM players
+WHERE goals > (
+  SELECT goals
+  FROM players
+  WHERE name = "ウィル"
+);
+平均得点数より高いレコードからデータを取得
+SELECT name,goals
+FROM players
+where goals>(
+avg(goals)
+from players
+);
