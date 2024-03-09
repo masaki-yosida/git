@@ -307,3 +307,9 @@ studentsテーブルのidカラムの値が6のレコードをnameをJordanに�
 update students 
 set name = "Jordan" , course = "HTML"
 where id = 6;
+
+DELETE
+レコードを削除するときはDELETEを使います。UPDATEと同様にクエリ実行後はレコードを元に戻すことができないので、SELECTでレコードを確認してから削除を行いましょう。
+-- studentsテーブルからidカラムの値が7のレコードを削除してください。
+delete from students
+where id =7 ;
