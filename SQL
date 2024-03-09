@@ -277,3 +277,12 @@ on players.country_id = countries.id
 group by countries.name;
 
 JOINを使った結合は、FROMで指定したテーブルを基準に実行されます。ただし外部キーがNULLのレコードは、実行結果に表示されません。
+
+LEFT JOIN
+LEFT JOINを使うことで、FROMで指定したテーブルのレコードを全て取得します。外部キーがNULLのレコードもNULLのまま実行結果に表示されます。
+LEFT JOINを使い、playersテーブルにteamsテーブルを結合して、データを取得
+SELECT *
+FROM players
+LEFT JOIN teams
+on players.previous_team_id = teams.id;
+
