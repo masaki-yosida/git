@@ -111,3 +111,6 @@ DISTINCT
 重複するデータを除いたcharacter_nameカラムのデータを取得
 SELECT DISTINCT(character_name)
 
+四則演算
+消費税を含んだpriceカラムのデータを取得
+SELECT name, price, price *1.08
