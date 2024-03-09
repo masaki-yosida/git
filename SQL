@@ -259,3 +259,19 @@ SELECT *
 FROM players
 JOIN countries
 ON players.country_id = countries.id ;
+
+JOINを使い、playersテーブルにcountriesテーブルを結合して、下記のデータを取得してください。
+①playersテーブルのnameカラム②countriesテーブルのnameカラム
+SELECT players.name,countries.name
+FROM players
+join countries
+on players.country_id = countries.id ;
+
+JOINを使い、playersテーブルにcountriesテーブル を結合して、下記のデータを取得してください。
+①countriesテーブルのnameカラム②goalsカラムの合計
+ただし、 GROUP BYを使って、countries.nameごとにグループ化してください。
+SELECT countries.name , sum(goals)
+FROM players
+join  countries
+on players.country_id = countries.id
+group by countries.name;
