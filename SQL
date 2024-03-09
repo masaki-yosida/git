@@ -123,3 +123,12 @@ SELECT sum(price)
 SELECT sum(price)
 FROM purchases
 WHERE character_name ="にんじゃわんこ";
+
+AVG関数
+SQLで数値の平均を計算する場合は、AVGを用います
+ priceカラムの平均を取得
+SELECT avg(price)
+character_nameが「にんじゃわんこ」であるpriceカラムのデータの平均を取得
+SELECT avg(price)
+FROM purchases
+WHERE character_name = "にんじゃわんこ" ;
