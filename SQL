@@ -83,3 +83,15 @@ and character_name = "ひつじ仙人";
 categoryカラムが「食費」またはcharacter_nameカラムが「にんじゃわんこ」であるデータを取得
 where category = "食費"
 or character_name = "にんじゃわんこ";
+
+ORDER BY
+データを並び替えるためには、「〜順に並べる」という意味の「ORDER BY」を用います
+「ORDER BY」は「WHERE」と併用することが可能
+
+昇順と降順
+昇順」は「小さい数から大きい数へ向かう順序」、「降順」は「大きい数から小さい数へ向かう順序」です。SQLでは「昇順」は「ASC」、「降順」は「DESC」と指定
+
+priceカラムを基準に降順に並び替えたデータを取得
+order by price desc;
+priceカラムを基準に昇順に並び替えたデータを取得
+order by price asc ;
