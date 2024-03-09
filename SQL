@@ -300,3 +300,10 @@ course: Java
 *idカラムにはAUTO INCREMENTが使われているので、idカラムは省略してください。
 INSERT into students (name,course)
 values ("Kate","Java");
+
+UPDATE
+データを更新したいときにはUPDATEを使います。
+studentsテーブルのidカラムの値が6のレコードをnameをJordanに、courseをHTMLに変更してください
+update students 
+set name = "Jordan" , course = "HTML"
+where id = 6;
