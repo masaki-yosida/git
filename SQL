@@ -76,3 +76,10 @@ priceカラムがNULLであるデータを取得
 where price is null ;
 priceカラムがNULLでないデータを取得
 where price is not null ;
+
+categoryカラムが「食費」かつcharacter_nameカラムが「ひつじ仙人」であるデータを取得
+where category = "食費"
+and character_name = "ひつじ仙人";
+categoryカラムが「食費」またはcharacter_nameカラムが「にんじゃわんこ」であるデータを取得
+where category = "食費"
+or character_name = "にんじゃわんこ";
