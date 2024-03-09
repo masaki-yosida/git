@@ -105,3 +105,9 @@ LIMIT
 limit 5;
 取得結果が「最大10件」となるようにデータを取得
 limit 10;
+
+DISTINCT
+検索結果から重複するデータを除くことが可能
+重複するデータを除いたcharacter_nameカラムのデータを取得
+SELECT DISTINCT(character_name)
+
