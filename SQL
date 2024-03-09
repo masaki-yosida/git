@@ -225,3 +225,14 @@ where goals>(
 select avg(goals)
 from players
 );
+
+ASの使い方
+ASを使うことでカラム名などに別名を定義することができます。「カラム名 AS "名前"」で、カラム名に定義する名前を指定
+--ASを使って、取得したカラム名を"身長180cm以上の選手"としてください
+SELECT name as "身長180cm以上の選手"
+FROM players
+where height >= 180 ; 
+--ASを使って、取得したカラム名を"チームの合計得点"としてください
+SELECT sum(goals) as "チームの合計得点"
+FROM players ;
+
