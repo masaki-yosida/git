@@ -70,3 +70,9 @@ character_nameカラムが「にんじゃわんこ」でないデータを取得
 where not character_name = "にんじゃわんこ";
 nameカラムが「プリン」を含まないデータを取得
 where not name like "%プリン%";
+
+NULL=何もない
+priceカラムがNULLであるデータを取得
+where price is null ;
+priceカラムがNULLでないデータを取得
+where price is not null ;
