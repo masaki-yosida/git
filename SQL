@@ -145,3 +145,15 @@ SELECT count(*)
 SELECT count(*)
 FROM purchases
 WHERE character_name= "にんじゃわんこ" ;
+
+MAX・MIN関数
+SQLでMAXという関数を用いると、指定したカラムのデータの中から最大のデータを取得することができます。同じく、MINと言う関数を用いることで、最小のデータを取得する
+もっとも大きいpriceカラムの値を取得
+max(price)
+もっとも小さいpriceカラムの値を取得
+min(price)
+「にんじゃわんこ」であるレコードの中で、もっとも大きいpriceカラムの値を取得
+SELECT max(price)
+FROM purchases
+WHERE character_name ="にんじゃわんこ" ;
+
