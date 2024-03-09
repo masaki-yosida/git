@@ -236,3 +236,11 @@ where height >= 180 ;
 SELECT sum(goals) as "チームの合計得点"
 FROM players ;
 
+日本より上位である国のデータを取得
+SELECT *
+FROM countries
+WHERE rank < (
+  select rank
+  FROM countries
+  WHERE name = "日本"
+);
