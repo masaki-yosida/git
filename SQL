@@ -170,3 +170,11 @@ SELECT count(price),purchased_at
 FROM purchases
 group by purchased_at;
 
+purchased_atとcharacter_nameごとの合計金額を取得
+SELECT sum(price),purchased_at,character_name
+FROM purchases
+GROUP BY purchased_at,character_name;
+purchased_atとcharacter_nameごとにお金を使った回数
+SELECT count(*),purchased_at,character_name
+FROM purchases
+GROUP BY purchased_at,character_name ;
