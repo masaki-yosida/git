@@ -157,3 +157,16 @@ SELECT max(price)
 FROM purchases
 WHERE character_name ="にんじゃわんこ" ;
 
+GROUP BY
+GROUP BYを用いると、データをグループ化することができます
+GROUP BYの注意点
+GROUP BYを用いる場合、SELECTで使えるのは、GROUP BYに指定しているカラム名と、集計関数のみ
+purchased_atごとの合計金額を取得
+SELECT sum(price),purchased_at
+FROM purchases
+group by purchased_at ;
+purchased_atごとのお金を使った数を取得
+SELECT count(price),purchased_at
+FROM purchases
+group by purchased_at;
+
