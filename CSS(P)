@@ -17,3 +17,13 @@ float: left;を指定すると要素が左から順に横に並び
 
 要素にボーダー（枠線）をつけるには、borderプロパティを用います。図のように、枠線の太さ、種類、色を指定して使用
 余白を作るにはpaddingを使ってきましたが、paddingはborderの内側の余白を作ります。borderの外側に余白を作りたい場合、marginを用います
+
+CSSで背景画像を指定するにはbackground-imageプロパティを用います。background-image: url(画像のURL);のように使います
+background-imageで指定された背景画像は図のように表示範囲を埋め尽くす
+background-size: cover;を指定すると、1枚の画像で表示範囲を埋め尽くすように画像の大きさが拡大縮小します
+
+containerクラスを中央寄せにしましょう。中央に寄せるためにはmarginの左右にautoを指定します。
+marginにautoを指定するときは、必ずwidthを併せて指定します。なお、上下のmarginにautoを指定することはできません。
+
+opacityプロパティを使えば要素を透明にできます。
+透明度は0.0(完全に透明) ~ 1.0(完全に不透明)の数値で指定
