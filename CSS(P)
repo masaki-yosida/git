@@ -46,3 +46,12 @@ leftで左寄せ、centerで中央揃え、rightで右寄せに設定する
 「margin: 0 auto」と「text-align: center」
 素を中央寄せにする方法として、margin: 0 autoとtext-align:
 containerクラスのように、広い範囲を囲うようなブロック要素の場合はmarginを、テキストやボタンのようなインライン要素・インラインブロック要素の場合はtext-alignを使うようにしましょう。
+
+アイコンを表示するにはFont Awesomeというものを使う
+URL https://fontawesome.com 
+Font Awesomeの使い方
+Font Awesomeは、以下の手順で使用することができます。
+①Font AwesomeのCSSファイルを読み込む
+②<span>タグにfaクラスとfa-アイコン名クラスを指定する（Font Awesomeのサイトにアイコンごとのクラス名が載っています。）
+headに<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+nodyの表示させたいところに<span class="fa fa-facebook"></span>
