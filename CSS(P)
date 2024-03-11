@@ -55,3 +55,10 @@ Font Awesomeは、以下の手順で使用することができます。
 ②<span>タグにfaクラスとfa-アイコン名クラスを指定する（Font Awesomeのサイトにアイコンごとのクラス名が載っています。）
 headに<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 nodyの表示させたいところに<span class="fa fa-facebook"></span>
+
+opacityとrgba
+opacityには要素の中身全てを透明にするという性質があります。背景色のみを透明にするには、rgbaというものを使う必要
+rgb
+rgbは色の指定の仕方の1つで、3つの値の組み合わせで表示する色を決めます
+rgba
+色を透明にしたいときは色をrgbaで指定します。rgbaは4つの値をコンマ（,）区切りで入れます。4つ目の値が透明にする度合いで、0 ~ 1の数値で指定します（値が小さいほど透明になります）
