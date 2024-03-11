@@ -56,3 +56,13 @@ HTMLファイルには、決められた型を書いていく必要がありま�
 
 main要素は、「copy-container」、「contents」、「contact-form」の3つの要素で構成
 文中の一部にCSSを適用させたい場合は、<span>要素で囲みます
+
+<input>要素は１行のテキスト入力を受け取るための要素です。
+<textarea>要素は複数行のテキスト入力を受け取るための要素です。
+<input>要素は終了タグが不要な点に注意してください。
+<input>要素にはtype属性を指定することができ、type属性にsubmitを指定
+value属性に任意の値を指定することで、ボタンに表示されるテキストを変更する
+
+
+
+<input class="contact-submit" type="submit" value="送信">
