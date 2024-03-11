@@ -12,3 +12,26 @@ HTML
 
 要素にはclassを使って名前をつけることができます。
 classをつけることにより、それぞれの要素を識別し、
+
+HTMLファイルには、決められた型を書いていく必要があります。
+<html>要素の中に<head>要素と<body>要素が必要です。<head>要素にはページに関する情報、<body>要素には実際に表示したい内容を書きます。
+<!DOCTYPE html>の部分はDOCTYPE宣言と呼ばれるもので、HTMLのバージョンを宣言するためのもの
+<head>要素にはWebページの設定に関する情報
+<head>要素の中では、以下のように①文字コードの指定、②ページのタイトルの設定、③CSSの読み込みなどを行う
+1 文字コードを指定することで、ページの文字化けを防ぐことができます。<meta charset="utf-8">とすることで、そのページの文字コードをUTF-8に指定する
+2 <title>要素で指定されたタイトルは、ブラウザのタブ上に現れます
+3 HTMLからCSSを読み込むためには、<link rel="stylesheet">を用います。<link rel="stylesheet" href="stylesheet.css">のように、href属性で読み込むCSSファイルを指定
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 雛形をコピーして、3つの要素を追加してください -->
+    <!-- 文字コードを「utf-8」にしてください -->
+    <meta charset="utf-8">
+    <!-- タイトルを「Progate」にしてください -->
+    <title>Progate</title>
+    <!-- 「stylesheet.css」を読み込んでください -->
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+  </body>
+</html>
