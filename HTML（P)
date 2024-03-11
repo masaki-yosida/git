@@ -53,3 +53,6 @@ HTMLファイルには、決められた型を書いていく必要がありま�
     <div class="footer"></div>
   </body>
 </html>
+
+main要素は、「copy-container」、「contents」、「contact-form」の3つの要素で構成
+文中の一部にCSSを適用させたい場合は、<span>要素で囲みます
