@@ -70,3 +70,11 @@ line-heightプロパティを使うと、行の高さを指定
 
 font-weightプロパティを用いると文字の太さを変更することができます。normalまたはboldを指定します。
 <h1>~<h6>の要素は初期状態でfont-weight: bold;となっているので、font-weight: normal;と指定すれば文字が細くなります。
+
+position: absolute;
+HTMLの要素同士は通常重なって表示されることはありませんが、position: absolute;を使うと、要素同士を重ねて表示することが出来ます。
+サイト全体の左上部分を基準とし、そこからの位置をtopとleftを用いて指定します。また、rightやbottomを併用することも可能です。
+position: 
+基準位置はサイト全体の左上部分
+absolute;
+基準としたい親要素にposition: relative;と指定すると、その要素の左上部分が基準位置となります
