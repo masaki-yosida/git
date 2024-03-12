@@ -67,3 +67,6 @@ transition
 transitionを使うとアニメーションをつけることができます。「変化の対象」や、「変化にかかる時間」などを指定できます。
 「変化の対象」にはcolorなどのプロパティを指定しますが、allを指定すると全てのプロパティに適用出来ます。transitionは多くの場合hoverと組み合わせて使います
 line-heightプロパティを使うと、行の高さを指定
+
+font-weightプロパティを用いると文字の太さを変更することができます。normalまたはboldを指定します。
+<h1>~<h6>の要素は初期状態でfont-weight: bold;となっているので、font-weight: normal;と指定すれば文字が細くなります。
