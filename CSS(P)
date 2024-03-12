@@ -133,3 +133,6 @@ box-sizing: border-box;を指定するときは、*(アスタリスク)に対し
 レスポンシブデザインを適用する準備として、<head>タグ内にviewportを設定しましょう。
 viewportを設定しないと、スマートフォンやタブレットでの閲覧時にメディアクエリが正しく機能しません。
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+floatはclear: left;で「浮いている」状態を解除できます
+float入らないclear:left;だけ
