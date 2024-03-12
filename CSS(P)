@@ -129,3 +129,7 @@ box-sizing: border-box;を指定するときは、*(アスタリスク)に対し
 *{
   box-sizing: border-box;
 }
+
+レスポンシブデザインを適用する準備として、<head>タグ内にviewportを設定しましょう。
+viewportを設定しないと、スマートフォンやタブレットでの閲覧時にメディアクエリが正しく機能しません。
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
