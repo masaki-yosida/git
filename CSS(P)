@@ -100,3 +100,22 @@ z-indexプロパティは必ずpositionプロパティと併用する必要が�
 min-widthはその反対となります
 
 ブレイクポイント
+スマートフォンの画面幅は670px以下、タブレットの画面幅は670px ~ 1000pxと想定して、ブレイクポイントを設定
+
+h1 {
+  color: red;
+}
+/* ブレイクポイントをmax-width: 1000pxに指定してください */
+@media (max-width: 1000px) {
+  /* h1のcolorをblueに指定してください */
+  h1{
+    color:blue;
+  }
+}
+/* ブレイクポイントをmax-width: 670pxに指定してください */
+@media (max-width: 670px) {
+  /* h1のcolorをgreenに指定してください */
+  h1{
+    color:green;
+  }
+}
