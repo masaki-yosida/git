@@ -119,3 +119,13 @@ h1 {
     color:green;
   }
 }
+
+
+box-sizing: border-box;
+box-sizingをborder-boxに指定すると、要素の幅(width)の合計にpaddingとborderが含まれるようになります。
+そのため、paddingやborderを追加した時に生じるレイアウト崩れを未然に防ぐことができます
+box-sizing: border-box;を指定するときは、*(アスタリスク)に対して指定することが推奨されています。
+*はすべての要素に対してCSSを適用したい場合に用います。
+*{
+  box-sizing: border-box;
+}
