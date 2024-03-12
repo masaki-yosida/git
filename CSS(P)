@@ -136,3 +136,5 @@ viewportを設定しないと、スマートフォンやタブレットでの閲
 
 floatはclear: left;で「浮いている」状態を解除できます
 float入らないclear:left;だけ
+
+要素を非表示にするにはdisplay: none;を用います。非表示にした要素を表示させる時は、display: block;を用いて表示します
