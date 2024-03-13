@@ -189,3 +189,32 @@ menus =[menu1, menu2, menu3, menu4]
 menus.each do |menu|
   puts menu.info
 end
+
+gets.chomp
+力を受け付けるには「gets.chomp」を使います。このコードが実行されると、コンソールが入力待機状態になります。
+「変数 = gets.chomp」とすることで、エンターキーを押されるまでに入力された値を変数に代入することができます。
+
+gets.chomp.to_i
+「gets.chomp」で入力された値を受け取ることができましたが、実はこれは文字列になるため、「3」と入力しても文字列の"3"になってしまいます。
+数値の計算などに用いる場合は、これを数値に変換する必要があります。
+例
+puts "名前を入力してください"
+
+# 入力を受け取って変数nameに代入してください
+name = gets.chomp
+
+# 「○○さん、いらっしゃいませ」となるように出力してください
+puts "#{name}さん、いらっしゃいませ"
+
+puts "1つ100円のお菓子があります"
+puts "いくつ買いますか?"
+
+# 入力を数値として受け取って変数countに代入してください
+count = gets.chomp.to_i
+
+# 変数total_priceに、100とcountを掛けた値を代入してください
+ total_price = count * 100
+
+# 「お会計は○○円です」となるように出力してください
+
+puts "お会計は#{total_price}円です"
