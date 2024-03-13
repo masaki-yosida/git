@@ -145,3 +145,20 @@ end
 
 インスタンス変数に値を代入
 インスタンス.変数名 = 値
+
+インスタンスメソッドの中では、特殊な変数「self」を用いて「self.変数名」とすることで、インスタンス変数を扱うことができるようになります。
+インスタンスメソッドでは、変数「self」に、呼び出したインスタンス自身が代入されています。
+例
+class Menu
+  attr_accessor :name
+  attr_accessor :price
+  def info
+    # 「#{}」の中身を埋めてください
+    return "#{self.name} #{self.price}円"
+  end
+end
+menu1 = Menu.new
+menu1.name = "ピザ"
+menu1.price = 800
+puts menu1.info
+
