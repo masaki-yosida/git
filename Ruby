@@ -129,3 +129,12 @@ end
 
 returnは、戻り値を返すだけでなく、メソッドの処理を終了させる性質も持っています。
 よって、returnの後にあるメソッドの処理は実行されませんので注意しましょう。
+
+attr_accessor
+クラスのデータを定義する方法の1つに「attr_accessor シンボル」を使う方法があります
+例
+class Menu
+  # nameとpriceというインスタンス変数を用意してください
+  attr_accessor :name
+  attr_accessor :price
+end
