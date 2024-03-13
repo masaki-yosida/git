@@ -170,3 +170,7 @@ initializeメソッドの中で、インスタンス変数に値を代入して�
 initializeメソッドの引数
 initializeメソッドは通常のインスタンスメソッドと同じように、引数を渡すこともできます。
 その際、「クラス.new」に対して引数を渡すことで、initializeメソッドにその値を渡すことができます。
+
+require
+Menuクラスの定義をmenu.rbに移動させたら、menu.rbのコードをindex.rbでも使えるようにしましょう。
+index.rbの一番上の行で、「require "./menu"」とすることで、menu.rbのコードを読み込めるようになります。
