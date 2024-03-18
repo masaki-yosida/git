@@ -238,4 +238,15 @@ def initialize(name:, price:, calorie:)
     # superを使って書き換えてください
     super(name: name,price: price)
     self.calorie = calorie
-  endS
+  end
+
+Dateクラス
+日付を扱うためには、Dateクラスというものを用います。DateクラスとはRubyがすでに用意しているクラス
+# requireを用いて、Dateクラスを読み込んでください
+require "date"
+# 変数birthdayに、Dateクラスのインスタンスを代入してください
+birthday = Date.new(1995 ,6,30)
+# 変数birthdayをputsしてください
+puts birthday¥
+# 変数birthdayにsunday?メソッドを用いた結果をputsしてください
+puts birthday.sunday?
