@@ -250,3 +250,14 @@ birthday = Date.new(1995 ,6,30)
 puts birthday¥
 # 変数birthdayにsunday?メソッドを用いた結果をputsしてください
 puts birthday.sunday?
+
+Date.todayとすることで、今日の日付のインスタンスをつくることができるようになっています
+
+
+クラスメソッドは、「def クラス名.メソッド名」とすることで定義できます。インスタンスメソッドとの違いはメソッド名の前にクラス名を書く必要がある点です。
+今回はMenuクラスに、「is_discount_day?」というクラスメソッドを定義
+def Menu.is_discount_day?
+    # 日曜日であればtrue、そうでなければfalseを返してください
+    today = Date.today
+    return today.sunday?
+  end
