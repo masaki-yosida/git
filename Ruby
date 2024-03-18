@@ -224,3 +224,18 @@ puts "お会計は#{total_price}円です"
 親クラスにあるメソッドと同じ名前のメソッドを子クラスで定義すると、メソッドを上書きすることができます。これをメソッドの「オーバーライド」と呼びます。
 オーバーライドをすると、子クラスのインスタンスは親クラスのメソッドではなく、子クラスで定義したメソッドを呼び出すようになります。
 
+super
+オーバーライドしたメソッドの中で「super」とすることで、親クラスの同名のメソッドを呼び出すことができます。
+あくまでメソッドを呼び出しているので、親クラスのメソッドの定義に合わせて、superに対して引数を渡す必要があります。
+ def initialize(name:, price:, calorie:)
+    # superを使って書き換えてください
+    self.name = name
+    self.price = price
+    self.calorie = calorie
+  end
+　　　　　　　　　　　　　　　　　　　　　↓
+def initialize(name:, price:, calorie:)
+    # superを使って書き換えてください
+    super(name: name,price: price)
+    self.calorie = calorie
+  endS
