@@ -262,3 +262,4 @@ if validate(player_hand):
 # 関数 validate の戻り値が False の場合「 正しい数値を入力してください 」と出力してください
 else:
     print('正しい数値を入力してください')
+
