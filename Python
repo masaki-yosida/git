@@ -228,3 +228,7 @@ def print_hand(hand):
 print_hand("グー")
 # 引数を文字列「 パー 」として関数 print_hand を呼び出してください
 print_hand("パー")
+
+def print_hand(hand,name):で関数を２つ定義可能
+# 第2引数に文字列「 コンピューター 」を入れてください
+print_hand('パー',"コンピューター")
