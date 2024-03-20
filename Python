@@ -237,3 +237,6 @@ print_hand('パー',"コンピューター")
 引数には初期値を設定することもできます
 def print_hand(hand, name= "ゲスト"):
 
+if player_name == "":←　で名前が空のif文が作成可能
+
+
