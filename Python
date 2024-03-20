@@ -152,13 +152,6 @@ for number in numbers:
     print(number)
 
 
-
-
-
-
-
-
-
 # 変数 money に数値 1000 を代入してください
 money = 1000
 
