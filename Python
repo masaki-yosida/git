@@ -232,3 +232,8 @@ print_hand("パー")
 def print_hand(hand,name):で関数を２つ定義可能
 # 第2引数に文字列「 コンピューター 」を入れてください
 print_hand('パー',"コンピューター")
+
+引数の初期値
+引数には初期値を設定することもできます
+def print_hand(hand, name= "ゲスト"):
+
