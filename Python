@@ -114,16 +114,14 @@ fruits["grape"] =500
 # fruits の値を出力してください
 print(fruits)
 
-
-
-
-
-
 fruits = {'apple': 'りんご', 'banana': 'バナナ', 'grape': 'ぶどう'}
 # for 文を用いて、辞書のキーを1つずつ取り出し、繰り返しの中で「 ◯◯は△△という意味です 」と出力させてください
 for fruit_key in fruits :
   print(fruit_key +"は"+ fruits[fruit_key] +"という意味です")
 
+while文
+for文以外にもwhile文というものがあります。while文を用いると、「ある条件に当てはまる間、処理を繰り返す」といったことが可能になります。
+例
 x = 10
 # while 文を用いて、「変数 x が 0 より大きい」間、繰り返される繰り返し処理を作ってください
 while x>0:
@@ -131,6 +129,17 @@ while x>0:
     print(x)
     # 変数 x から 1 引いてください
     x -=1
+
+
+
+
+
+
+
+
+
+
+
 
 numbers = [765, 921, 777, 256]
 for number in numbers:
