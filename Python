@@ -298,3 +298,17 @@ class MenuItem:
 # MenuItem クラスのインスタンスを生成してください
 menu_item1 = MenuItem()
 
+インスタンス変数
+menu_item1.name = 'サンドイッチ'」とすることで、menu_item1に「name」が「サンドイッチ」であるという情報を追加することができます。
+この時、「name」のことを「インスタンス変数」と呼びますので覚えておきましょう。
+インスタンス.インスタンス変数名」とすることで、そのインスタンス変数の値を用いることができます
+例
+class MenuItem:
+    pass
+menu_item1 = MenuItem()
+menu_item1.name = 'サンドイッチ'
+print(menu_item1.name)
+# menu_item1 の price に 500 を代入してください
+menu_item1.price = 500
+# menu_item1 の price を出力してください
+print(menu_item1.price)
