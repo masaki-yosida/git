@@ -369,3 +369,18 @@ print(menu_item1.info())
 result = menu_item1.get_total_price(4)
 # 「 合計は〇〇円です 」となるように出力してください
 print("合計は"+ str(result)+"円です")
+
+__init__メソッド
+。__init__メソッドは、「クラス名()」でインスタンスを生成した直後に自動で呼び出されます
+例
+class MenuItem:
+    # __init__ メソッドを定義してください
+    def __init__(self):
+        print("MenuItemクラスのインスタンスが生成されました！")
+
+    def info(self):
+        return self.name + ': ¥' + str(self.price)
+
+    def get_total_price(self, count):
+        total_price = self.price * count
+        return total_price
