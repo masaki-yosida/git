@@ -282,3 +282,10 @@ random.randint(x, y)と書くことで、xからyまでの整数をランダム�
 例
  # randint を用いて 0 から 2 までの数値を取得し、変数 computer_hand に代入してください
     computer_hand = random.randint(0,2)
+
+クラスの定義
+クラスは「class クラス名:」とすることで定義できます。また、クラス名は「MenuItem」のように大文字で始めるようにします
+まだ処理を追加する必要がないので、「pass」と書きましょう（これは何も処理がないことを表しています）。
+例
+class MenuItem:
+    pass
