@@ -332,3 +332,19 @@ menu_item2.price = 400
 # menu_item2 に対して info メソッドを呼び出してください
 menu_item2.info()
 
+インスタンスメソッドのself
+インスタンスメソッドの第1引数に指定した「self」には、そのメソッドを呼び出したインスタンス自身が代入されています。
+そのため、下の図のようにメソッド内で「self.name」とすることで、そのメソッドを呼び出している「menu_item1」の「name」の値を取得することができます。
+例
+class MenuItem:
+    def info(self):
+        # 「 ○○: ¥□□ 」となるように出力してください
+        print(self.name+": ¥"+ str(self.price))
+menu_item1 = MenuItem()
+menu_item1.name = 'サンドイッチ'
+menu_item1.price = 500
+menu_item1.info()
+menu_item2 = MenuItem()
+menu_item2.name = 'チョコケーキ'
+menu_item2.price = 400
+menu_item2.info()
