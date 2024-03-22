@@ -413,3 +413,80 @@ from モジュール名 import クラス名」とすることで、そのモジ�
 例
 # menu_item.py から MenuItem クラスを読み込んでください
 from menu_item import MenuItem
+
+繰り返し処理で番号をつける
+目標物では、メニュー名の左に0から順番に番号がついていました。
+番号をつけるには、番号を保存するための変数をfor文の外で用意して、for文の処理の中で値を1だけ増やして更新するようにします。
+例
+from menu_item import MenuItem
+menu_item1 = MenuItem('サンドイッチ', 500)
+menu_item2 = MenuItem('チョコケーキ', 400)
+menu_item3 = MenuItem('コーヒー', 300)
+menu_item4 = MenuItem('オレンジジュース', 200)
+menu_items = [menu_item1, menu_item2, menu_item3, menu_item4]
+# 変数 index を定義し、数値の 0 を代入してください
+index = 0
+for item in menu_items:
+    # 「 0. サンドイッチ: ¥500 」となるように出力してください
+    print(str(index)+"."+item.info())    
+    # 変数 index に 1 を加えてください
+    index +=1
+
+合計金額を1割引にする
+MenuItemクラス内に定義した「get_total_price」メソッド内で、引数countの値が3以上の場合には結果を1割引（90%の値段）にしてみましょう。
+数値の計算では小数を使うことも可能です。今回は、変数total_priceの値に「0.9」をかけてみましょう。
+
+四捨五入
+整数と小数を計算した結果は、小数で出力されてしまいます。
+今回は料金なので整数で出力するようにしましょう。round(小数)とすることで、その小数を四捨五入した結果の整数を取得することができます。
+例
+menu_item。pyの中身
+class MenuItem:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def info(self):
+        return self.name + ': ¥' + str(self.price)
+
+    def get_total_price(self, count):
+        total_price = self.price * count
+        
+        # count が 3 以上のとき、 total_price に 0.9 をかけてください
+        if count >= 3:
+            total_price  *= 0.9
+        
+        # total_price を四捨五入して、 return してください
+        return round(total_price)
+
+script.pyの中身
+from menu_item import MenuItem
+
+menu_item1 = MenuItem('サンドイッチ', 500)
+menu_item2 = MenuItem('チョコケーキ', 400)
+menu_item3 = MenuItem('コーヒー', 300)
+menu_item4 = MenuItem('オレンジジュース', 200)
+
+menu_items = [menu_item1, menu_item2, menu_item3, menu_item4]
+
+index = 0
+
+for item in menu_items:
+    print(str(index) + '. ' + item.info())
+    index += 1
+
+print('--------------------')
+
+order = int(input('メニューの番号を入力してください: '))
+selected_menu = menu_items[order]
+print('選択されたメニュー: ' + selected_menu.name)
+
+# コンソールから入力を受け取り、変数 count に代入してください
+count =int(input("個数を入力してください(3つ以上で1割引): "))
+
+# get_total_price メソッドを呼び出してください
+result = selected_menu.get_total_price(count)
+
+# 「 合計は〇〇円です 」となるように出力してください
+print("合計は"+str(result)+"円です")
+
