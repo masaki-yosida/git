@@ -312,3 +312,23 @@ print(menu_item1.name)
 menu_item1.price = 500
 # menu_item1 の price を出力してください
 print(menu_item1.price)
+
+クラスの中では関数を定義することができます。クラスの中で定義した関数のことをメソッドと呼びます。
+メソッドの定義の方法は通常の関数と同じですが、第1引数にselfを追加する必要があることに注意しましょう。
+クラスの中で定義したメソッドは、インスタンスに対して使うように呼び出します。具体的には、「インスタンス.メソッド名()」とすることで、そのメソッドを呼び出す
+例
+class MenuItem:
+    # info メソッドを定義してください
+    def info(self):
+        print("メニューの名前と値段が表示されます")
+menu_item1 = MenuItem()
+menu_item1.name = 'サンドイッチ'
+menu_item1.price = 500
+# menu_item1 に対して info メソッドを呼び出してください
+menu_item1.info()
+menu_item2 = MenuItem()
+menu_item2.name = 'チョコケーキ'
+menu_item2.price = 400
+# menu_item2 に対して info メソッドを呼び出してください
+menu_item2.info()
+
