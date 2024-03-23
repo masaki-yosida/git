@@ -517,3 +517,28 @@ class Food(MenuItem):
     def calorie_info(self):
         print(str(self.calorie) + 'kcalです')
     
+オーバーライド
+親クラスにあるメソッドと同じ名前のメソッドを子クラスで定義すると、メソッドを上書きすることができます。これをメソッドの「オーバーライド」と呼びます。
+オーバーライドをすると、子クラスのインスタンスは親クラスのメソッドではなく、子クラスで定義したメソッドを呼び出すようになります。
+子クラスで定義したメソッドを優先して呼び出すようになっています。したがって、子クラスと親クラスに同名のメソッドがある場合は、メソッドの内容が上書きされたようになります。
+例
+food.pyの中身
+from menu_item import MenuItem
+
+class Food(MenuItem):
+    # info メソッドを定義してください
+    def info(self):
+         return self.name + ': ¥' + str(self.price) + ' (' + str(self.calorie) + 'kcal)'
+
+    def calorie_info(self):
+        print(str(self.calorie) + 'kcalです')
+
+cript.pyの中身
+from food import Food
+from drink import Drink
+
+food1 = Food('サンドイッチ', 500)
+food1.calorie = 330
+
+# food1 に対して info メソッドを呼び出して戻り値を出力してください
+print (food1.info())
