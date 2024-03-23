@@ -490,3 +490,13 @@ result = selected_menu.get_total_price(count)
 # 「 合計は〇〇円です 」となるように出力してください
 print("合計は"+str(result)+"円です")
 
+継承
+あるクラスを元にして新たなクラスをつくることを「継承」と呼びます。
+「class 新しいクラス名(元となるクラス名):」とすることで他のクラスを継承して、新しいクラスを定義することができます。
+このとき、新しいクラスは「子クラス」、元となるクラスは「親クラス」と呼ばれます。
+例
+# from と import を用いて、 MenuItem クラスを読み込んでください
+from menu_item import MenuItem 
+# MenuItem クラスを継承して、 Food クラスを定義してください
+class Food(MenuItem):
+    pass
