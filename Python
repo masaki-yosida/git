@@ -542,3 +542,20 @@ food1.calorie = 330
 
 # food1 に対して info メソッドを呼び出して戻り値を出力してください
 print (food1.info())
+
+__init__メソッドのオーバーライド
+今回はFoodクラス内で、MenuItemクラスの__init__メソッドを上書きしてみましょう。下の図のように、オーバーライドする場合には、引数の数などを変えることも可能です。
+
+super()
+オーバーライドしたメソッドの中で「super()」とすることで、親クラスを呼び出すことができます。「super().メソッド名()」とすることで、親クラス内に定義されたインスタンスメソッドをそのまま利用することが可能です。
+例
+from menu_item import MenuItem
+class Food(MenuItem):
+    def __init__(self, name, price, calorie):
+        # super() を用いて、親クラスの __init__() を呼び出してください
+        super().__init__(name,price)
+        self.calorie = calorie
+    def info(self):
+        return self.name + ': ¥' + str(self.price) + ' (' + str(self.calorie) + 'kcal)'
+    def calorie_info(self):
+        print(str(self.calorie) + 'kcalです')
