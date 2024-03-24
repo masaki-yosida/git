@@ -1,1 +1,9 @@
-
+Javaとは
+Javaは、世界中にたくさんの開発者がいる有名な言語です。大規模システム、Webアプリケーション、スマートフォンアプリなど、Javaはあなたの周りの様々な場所で活躍しています
+Main.javaというファイルのSystem.out.println()の()の中に文字を書くと、コンソールという画面にその文字が表示されます。
+例
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello Java");
+  }
+}
