@@ -80,3 +80,25 @@ class Main {
     System.out.println(text);    
   }
 }
+
+1を足す、1を引く
+変数に1を足す、もしくは1を引く場合は「++」という記号は変数に「1を足す」という意味です。変数xに対してx++とするのは、x += 1と同じ意味になります。反対に--とすると1を引くことができます。
+例
+class Main {
+  public static void main(String[] args) {
+    int number = 8;
+    
+    // 変数numberに7をかけて、変数numberを上書きしてください
+    number *=7;
+    
+    // 変数numberを出力してください
+    System.out.println(number);
+    
+    // 変数numberの値に1を足して、変数numberを上書きしてください
+    number ++;
+    
+    // 変数numberを出力してください
+    System.out.println(number);
+    
+  }
+}
