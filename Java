@@ -14,3 +14,27 @@ Main.javaには、出力の命令以外にもコードが書いてあります�
 Javaでは文の終わりにセミコロン（;）を付けなければなりません
 コメント
 「//」と書くことで、そこから行末までがコメントとみなされます
+
+データ型
+文字列と整数のデータ型を覚えましょう。Stringは文字の並び、intは整数(integer)を意味する英語です。なおString型のSは大文字、int型のiは小文字である点に注意しましょう
+
+値の代入
+変数名 = 値」とするだけで代入することができます
+System.out.println()の()に変数をいれると、変数の中に入っている値が出力される
+例
+class Main {
+  public static void main(String[] args) {
+    // int型の変数numberを定義してください
+    int number;
+    // 変数numberに3を代入してください
+    number = 3;
+    // 変数numberを出力してください
+    System.out.println (number);
+    // String型の変数nameを定義してください
+    String name;
+    // 変数nameに"Wanko"を代入してください
+    name = "Wanko";
+    // 変数nameを出力してください
+    System.out.println(name);    
+  }
+}
