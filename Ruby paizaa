@@ -1,2 +1,9 @@
 ローカル変数(a = "b"のようなに変数を代入した物）
 
+message = gets.chomp
+puts message
+number =gets.to_i
+puts number
+gets ＝　入力を受け取るメソッド
+chomp =余分なものを取り除くメソッド
+to_i =整数に変換するメソッド
