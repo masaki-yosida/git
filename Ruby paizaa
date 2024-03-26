@@ -7,3 +7,9 @@ puts number
 gets ＝　入力を受け取るメソッド
 chomp =余分なものを取り除くメソッド
 to_i =整数に変換するメソッド
+
+greeting = 'Hello paiza'
+100.times do
+  puts greeting
+end
+times 複数回処理を行うメソッド（上記ではputs greetingを１００回出力している）
