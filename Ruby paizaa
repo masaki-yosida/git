@@ -63,3 +63,10 @@ while i <=15
     p i
     i = i +1
 end
+
+# HTMLによる箇条書き
+puts "<ul>"
+for i in 1..100
+    puts "<li>#{i}</li>"
+end
+puts "</ul>"
