@@ -25,3 +25,13 @@ puts "サイコロの目は#{number}です"
 ANDとOR
 両方が成り立つ時はANDを使う（＆＆）
 片方の場合はOR（論理和）を使う(||)
+
+puts flagを使うことで真偽の　真（true）、偽（false）を表示さてデバックに役だつ
+number = rand(1..10)
+puts "あなたの順位は#{number}位です"
+flag = number <=3
+##　ここにifを追加する
+if flag
+    puts "入賞おめでとう！"
+end
+puts flag
