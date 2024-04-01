@@ -13,3 +13,10 @@ greeting = 'Hello paiza'
   puts greeting
 end
 times 複数回処理を行うメソッド（上記ではputs greetingを１００回出力している）
+
+randメソッド
+数字をランダムに出力するメソッド
+例
+number =rand(1..6)
+puts "サイコロの目は#{number}です"
+上記にすることで１〜６がランダムに戻りちから返り値に出力される
