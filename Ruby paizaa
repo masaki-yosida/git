@@ -4,9 +4,12 @@ message = gets.chomp
 puts message
 number =gets.to_i
 puts number
-gets ＝　入力を受け取るメソッド
-chomp =余分なものを取り除くメソッド
-to_i =整数に変換するメソッド
+
+gets 
+入力を受け取るメソッド
+
+chomp
+余分なものを取り除くメソッド
 
 greeting = 'Hello paiza'
 100.times do
@@ -70,3 +73,4 @@ for i in 1..100
     puts "<li>#{i}</li>"
 end
 puts "</ul>"
+
