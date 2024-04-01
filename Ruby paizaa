@@ -35,3 +35,7 @@ if flag
     puts "入賞おめでとう！"
 end
 puts flag
+
+to_iは文字列
+to_sは数字
+to_fは文字列を小数点の整数
