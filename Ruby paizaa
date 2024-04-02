@@ -6,7 +6,8 @@ number =gets.to_i
 puts number
 
 gets 
-入力を受け取るメソッド
+入力を受け取るメソッド(文字列になる)
+
 
 chomp
 余分なものを取り除くメソッド
@@ -74,3 +75,9 @@ for i in 1..100
 end
 puts "</ul>"
 
+入力が3、hoge、fuga、pugaの時、hoge、fuga、pugaを出力する方法
+c =gets.to_i
+for i in 1..c
+    puts gets
+end
+cのところで３を入れ１〜３を決めた、８１のところで　.tp_iを入れなかった理由は数内ではないか変な改行がある場合は .chompを使う　例８１行目がputs gets.chompにし改行を消す。
