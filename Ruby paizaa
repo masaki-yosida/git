@@ -99,3 +99,8 @@ split メソッド
 例
 s = gets.split
 puts s
+
+入力a,bを2行で出力をする
+a, b = gets.split
+puts a,b
+
