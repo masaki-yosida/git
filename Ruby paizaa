@@ -40,6 +40,7 @@ if flag
 end
 puts flag
 
+
 to_iは文字列
 to_sは数字
 to_fは文字列を小数点の整数
@@ -92,5 +93,9 @@ cのところで３を入れ１〜３を決めた、８１のところで　.tp_
  end
 printを使っている理由は西暦と昭和を繋げるためputsだと2行になってしまう。
 
+
 split メソッド
 2行にすることができる
+例
+s = gets.split
+puts s
