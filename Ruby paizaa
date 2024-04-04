@@ -104,3 +104,7 @@ puts s
 a, b = gets.split
 puts a,b
 
+入力されたものを行で出力する方法
+a = gets.split(' ')
+a.each { |val| puts val }
+
