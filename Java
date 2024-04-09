@@ -106,8 +106,10 @@ class Main {
 キャメルケース
 「userName」のように2語以上の変数名を使うときは、単語の始めを大文字にして区切る方法
 
+
 double型
 int型（整数）,小数を表すデータ型も存在します。そのひとつがdouble型です
+
 例
 class Main {
   public static void main(String[] args) {
