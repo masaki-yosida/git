@@ -302,6 +302,8 @@ class Main {
 配列の作り方
 String[] names={"にんじゃわんこ","ひつじ仙人","ベイビーわんこ"};
 文字列だからString、数字だったらintを使う
+上書きの仕方
+languages[1] ="Java";
 例文
 class Main {
   public static void main(String[] args) {
@@ -316,3 +318,4 @@ class Main {
     
   }
 }
+
