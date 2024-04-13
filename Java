@@ -319,3 +319,16 @@ class Main {
   }
 }
 
+length
+「配列.length」のようにドット（.）でつないで用います。lengthを用いれば、配列の要素数を気にする必要がなくなります。
+例文
+class Main {
+  public static void main(String[] args) {
+    String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+    
+    // for文を用いて、「私の名前は◯◯です」と出力してください
+    for(int i=0; i<names.length; i++){
+    System.out.println("私の名前は"+names[i]+"です");
+    }
+  }
+}
