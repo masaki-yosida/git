@@ -299,3 +299,20 @@ class Main {
     }
   }
 }
+配列の作り方
+String[] names={"にんじゃわんこ","ひつじ仙人","ベイビーわんこ"};
+文字列だからString、数字だったらintを使う
+例文
+class Main {
+  public static void main(String[] args) {
+    // 変数namesに、配列を代入してください
+    String[] names={"にんじゃわんこ","ひつじ仙人","ベイビーわんこ"};
+    
+    // インデックス番号が0の要素を出力してください
+    System.out.println(names[0]);
+    
+    // インデックス番号が2の要素を出力してください
+    System.out.println(names[2]);
+    
+  }
+}
