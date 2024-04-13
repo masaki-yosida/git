@@ -39,11 +39,6 @@ class Main {
   }
 }
 
-switch文
-条件の値がcaseの値と一致するとき、処理が実行されます
-
-if文
-
 変数の初期化
 「int number = 3;」「String text = "Hello World";」のように、変数の値の代入は変数定義と同時に行うことができます。
 例
@@ -221,3 +216,6 @@ class Main {
     }
   }
 }
+
+switch文
+条件の値がcaseの値と一致するとき、処理が実行されます
