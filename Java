@@ -260,3 +260,15 @@ class Main {
     }
   }
 }
+
+for文
+forの後の()内に、「変数の初期化、条件式、変数の更新」の3つを記述します。それぞれはセミコロン（;）で区切りますが、最後の変数の更新にはセミコロン（;）をつけないこと
+例文
+class Main {
+  public static void main(String[] args) {
+    // for文を用いて、繰り返し処理をつくってください
+    for(int i=1; i<=10; i++){
+      System.out.println(i+"回目のループです");
+    }
+  }
+}
