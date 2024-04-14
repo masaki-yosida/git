@@ -39,6 +39,7 @@ class Main {
   }
 }
 
+
 変数の初期化
 「int number = 3;」「String text = "Hello World";」のように、変数の値の代入は変数定義と同時に行うことができます。
 例
@@ -355,5 +356,21 @@ class Main {
   // printDataメソッドを定義してください
   public static void printData(){
     System.out.println("私の名前はKate Jonesです");
+  }
+}
+
+引数の使い方
+class Main {
+  public static void main(String[] args) {
+    // 引数に「Kate Jones」を渡してください
+    printData("Kate Jones");
+    // 引数に「John Christopher Smith」を渡してください
+    printData("John Christopher Smith");
+  }
+
+  // 引数を受け取るようにしてください
+  public static void printData(String name) {
+    // 「私の名前は◯◯です」と出力されるように書き換えてください
+    System.out.println("私の名前は"+name+"です");   
   }
 }
