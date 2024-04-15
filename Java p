@@ -22,3 +22,14 @@ public class Main {
         System.out.println(message);
     }
 }
+
+整数の入力
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　←nextInt整数の場合に必要
+        System.out.println(number);   
+    }
+}
