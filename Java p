@@ -15,10 +15,10 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String message = scan.next();
+        Scanner scan = new Scanner(System.in);　　　←一回書けばいい
+        String message = scan.next();　　　　　　　　　　　　　　　　　　　　
         System.out.println(message);
-        message = scan.next();
+        message = scan.next();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　←Stringは一回定義してあるからいらない
         System.out.println(message);
     }
 }
