@@ -1,1 +1,24 @@
+入力タブから文字列を受け取る方法
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.next();
+        System.out.println(text);
+    }
+}
+
+２個の入力方法
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String message = scan.next();
+        System.out.println(message);
+        message = scan.next();
+        System.out.println(message);
+    }
+}
