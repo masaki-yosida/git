@@ -10,9 +10,7 @@ public class Main {
 }
 
 ２個の入力方法
-
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);　　　←一回書けばいい
@@ -25,7 +23,6 @@ public class Main {
 
 整数の入力
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -62,7 +59,6 @@ for文（繰り返し）
 
 複数のデータを受け取る方法
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -72,3 +68,4 @@ public class Main {
         }
     }
 }
+
