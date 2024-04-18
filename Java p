@@ -33,3 +33,20 @@ public class Main {
         System.out.println(number);   
     }
 }
+
+equals メソッド
+受け取った文字列で内容があっているかを確認する。
+例文
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String greeting = scan.next();
+        if(greeting.equals("Hello")){
+            System.out.println("こんにちは");
+        }else{
+            System.out.println("さようなら");
+        }
+        
+    }
+}
