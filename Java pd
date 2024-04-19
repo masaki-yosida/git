@@ -44,7 +44,7 @@ public class Main {
     public static void main(String[] args) {
         String a = "3";
         System.out.println(a);
-        System.out.println(Integer.parseInt(a));　　　　　　　　　　　　　　/*整数で表示する方法*/
+        System.out.println(Integer.parseInt(a));　　　　　　　　　　　　　　/*整数で表示する方法(今回はa=3だから表示できるが　　　　　　　a=3.0などの少数が入っているものはエラーになる（なぜエラーになるかは不明）*/
         System.out.println(Double.parseDouble(a));　　　　　　　　　　/*少数で表示する方法*/
     }
 }
