@@ -13,7 +13,7 @@ public class Main {
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);　　　←一回書けばいい
+        Scanner scan = new Scanner(System.in);　　　/*←一回書けばいい*/
         String message = scan.next();　　　　　　　　　　　　　　　　　　　　
         System.out.println(message);
         message = scan.next();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　←Stringは一回定義してあるからいらない
