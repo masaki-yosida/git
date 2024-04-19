@@ -36,3 +36,15 @@ public class Main {
         System.out.println(flag);　　　　　　　　　　　　　　/*真か偽を表示する方法*/
     }
 }
+
+データ型の変更
+// データ型
+
+public class Main {
+    public static void main(String[] args) {
+        String a = "3";
+        System.out.println(a);
+        System.out.println(Integer.parseInt(a));　　　　　　　　　　　　　　/*整数で表示する方法*/
+        System.out.println(Double.parseDouble(a));　　　　　　　　　　/*少数で表示する方法*/
+    }
+}
