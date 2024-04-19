@@ -48,3 +48,13 @@ public class Main {
         System.out.println(Double.parseDouble(a));　　　　　　　　　　/*少数で表示する方法*/
     }
 }
+
+型変換
+public class Main {
+    public static void main(String[] args) {
+        int price = 128;
+        int weight = 300;
+        int amount = (int)(price / 100.0* weight );　　　　　　　　　　　　　　/*小数を使っているため表示できないのでint型（整数）に変換している*/
+        System.out.println("100グラム" + price + "円の肉、" + weight + "グラムは、" + amount + "円です。");
+    }
+}
