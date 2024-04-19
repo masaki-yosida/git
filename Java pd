@@ -1,1 +1,10 @@
-
+HTMLを表示
+例
+/* HTMLを表示する*/
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("<b>モンスター</b>があらわれた");
+	}
+}
+System.out.printlnだと改行が行われる
+System.out.printだと改行されない
