@@ -8,3 +8,13 @@ public class Main {
 }
 System.out.printlnだと改行が行われる
 System.out.printだと改行されない
+
+ランダムに数値を表示する方法
+例
+public class Main {
+	public static void main(String[] args) {
+		double rand = Math.random() * 6 + 1;               /*6+1で１〜６になる　　　　　　　　　　　　　　７＋２で２〜８になる*/
+		int number = (int)rand;
+		System.out.println("サイコロの目は"+number+"です");
+	}
+}
