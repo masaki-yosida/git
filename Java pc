@@ -16,7 +16,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);　　　/*←一回書けばいい*/
         String message = scan.next();　　　　　　　　　　　　　　　　　　　　
         System.out.println(message);
-        message = scan.next();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　←Stringは一回定義してあるからいらない
+        message = scan.next();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　/*←Stringは一回定義してあるからいらない*/
         System.out.println(message);
     }
 }
@@ -26,7 +26,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int number = scan.nextInt();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　←nextInt整数の場合に必要
+        int number = scan.nextInt();　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　/*　←nextInt整数の場合に必要*/
         System.out.println(number);   
     }
 }
