@@ -58,3 +58,14 @@ public class Main {
         System.out.println("100グラム" + price + "円の肉、" + weight + "グラムは、" + amount + "円です。");
     }
 }
+
+whileによるループ処理
+public class Main {
+    public static void main(String[] args) {
+        int i = 0;
+        while(i<=9){
+            System.out.println("ハロー");
+            i++;
+        }
+    }
+}
